@@ -1,15 +1,19 @@
 # userscripts
 
-Personal userscripts. Install with [Violentmonkey](https://violentmonkey.github.io/) (or Tampermonkey on Chrome).
+Personal userscripts. Install with [Violentmonkey](https://violentmonkey.github.io/) (or Tampermonkey).
 
 ## Scripts
 
-| Script | Site | What it does |
+| Script | Site | Install |
 |---|---|---|
-| `hn-heatmap.user.js` | news.ycombinator.com | Heat-maps stories by points, adds pts/hr + comments/pt badges, floating sort toolbar (rank / pts / velocity / comments). Remembers last sort. |
+| **HN Heatmap + Velocity Sort** — heat-maps stories by points, adds pts/hr + comments/pt badges, floating sort toolbar (rank / pts / velocity / comments). Remembers last sort. | news.ycombinator.com | [install](https://raw.githubusercontent.com/Versailles/userscripts/main/hn-heatmap.user.js) |
 
-## Dev loop (Violentmonkey)
+Clicking an install link opens Violentmonkey's install page. Installed scripts auto-update from `main` via `@updateURL`.
 
-1. `chrome://extensions` → Violentmonkey → enable **Allow access to file URLs**.
-2. Open `file:///home/versailles/Work/userscripts/<script>.user.js` in Chrome and install.
-3. Keep that tab open — Violentmonkey tracks the file and reloads the script on every save.
+## Workflow
+
+The repo is the source of truth; don't edit scripts in the Violentmonkey editor.
+
+1. Edit `<script>.user.js` locally (optionally with Violentmonkey "Track local file" for live reload).
+2. Bump `@version` — Violentmonkey only updates when the version increases.
+3. Commit and push to `main`. Browsers pick it up on the next update check (or Violentmonkey → "Check for updates").
