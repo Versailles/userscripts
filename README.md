@@ -7,6 +7,7 @@ Personal userscripts. Install with [Violentmonkey](https://violentmonkey.github.
 | Script | Site | Install |
 |---|---|---|
 | **HN Heatmap + Velocity Sort** — heat-maps stories by points, adds pts/hr + comments/pt badges, floating sort toolbar (rank / pts / velocity / comments). Remembers last sort. | news.ycombinator.com | [install](https://raw.githubusercontent.com/Versailles/userscripts/main/hn-heatmap.user.js) |
+| **Amazon Unit Price Sort** — normalizes unit prices (lb/g/kg→oz, ml/L/gal→fl oz, "100 Sheets"→sheet), sorts by true unit price, 🏆 cheapest + green top 20%, flags results in a non-comparable unit, estimates from the title when Amazon shows none, hides sponsored results/banners. | amazon.com search | [install](https://raw.githubusercontent.com/Versailles/userscripts/main/amazon-unit-price.user.js) |
 
 Clicking an install link opens Violentmonkey's install page. Installed scripts auto-update from `main` via `@updateURL`.
 
