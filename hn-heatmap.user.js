@@ -1,7 +1,10 @@
 // ==UserScript==
 // @name         HN Heatmap + Velocity Sort
 // @namespace    https://news.ycombinator.com/
-// @version      1.0
+// @homepageURL  https://github.com/Versailles/userscripts
+// @updateURL    https://raw.githubusercontent.com/Versailles/userscripts/main/hn-heatmap.user.js
+// @downloadURL  https://raw.githubusercontent.com/Versailles/userscripts/main/hn-heatmap.user.js
+// @version      1.1
 // @description  Heat-map HN stories by points, add pts/hr + comments/pt badges, and a sort toolbar.
 // @match        https://news.ycombinator.com/
 // @match        https://news.ycombinator.com/news*
